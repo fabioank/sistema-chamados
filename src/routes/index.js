@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import Private from "./Private";
 
 import SignIn from "../pages/SignIn";
 import SignUp from "../pages/SignUp";
@@ -9,7 +10,7 @@ function RoutesApp(){
         <Routes>
             <Route path="/" element={<SignIn /> } />
             <Route path="/register" element={<SignUp/> } />
-            <Route path="/dashboard" element={<Dashboard/>}/>
+            <Route path="/dashboard" element={<Private><Dashboard/></Private>}/>
         </Routes >
     );
 }

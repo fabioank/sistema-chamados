@@ -3,6 +3,7 @@ import logo from '../../assets/logo.png'
 import { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../contexts/auth';
+import { useNavigate } from 'react-router-dom';
 
 export default function SignUp(){
 
@@ -57,6 +58,7 @@ export default function SignUp(){
                     ></input>
 
                     <button type='submit'>{loadingAuth ? 'Carregando...' : 'Cadastrar'}</button>
+
                 </form>
 
                 <Link to='/'>Já possui uma conta? Faça login</Link>
