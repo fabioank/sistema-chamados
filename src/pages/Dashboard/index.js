@@ -43,7 +43,11 @@ export default function Dashboard() {
                         <tr>
                             <td data-label="Cliente">Mercado Esquina</td>
                             <td data-label="Assunto">Suporte</td>
-                            <td data-label="Status">Em aberto</td>
+                            <td data-label="Status">
+                                <span className="badge" style={{backgroundColor: '#999'}}>
+                                    Em Aberto
+                                </span>
+                            </td>
                             <td data-label="Cadastrado">26/04/2024</td>
                             <td data-label="#">
                                 <button className="action" style={{backgroundColor: '#3585f6'}}>
@@ -54,6 +58,28 @@ export default function Dashboard() {
                                 </button>
                             </td>
                         </tr>
+
+
+                        <tr>
+                            <td data-label="Cliente">Informatica</td>
+                            <td data-label="Assunto">Suporte</td>
+                            <td data-label="Status">
+                                <span className="badge" style={{backgroundColor: '#999'}}>
+                                    Em Aberto
+                                </span>
+                            </td>
+                            <td data-label="Cadastrado">26/04/2024</td>
+                            <td data-label="#">
+                                <button className="action" style={{backgroundColor: '#3585f6'}}>
+                                    <FiSearch color="#fff" size={17}/>
+                                </button>
+                                <button className="action" style={{backgroundColor: '#f6a935'}}>
+                                    <FiEdit2 color="#fff" size={17}/>
+                                </button>
+                            </td>
+                        </tr>
+
+
                     </tbody>
                 </table>
 
